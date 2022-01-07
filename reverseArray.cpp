@@ -6,3 +6,12 @@
 
 // Input :  arr[] = {4, 5, 1, 2}
 // Output : arr[] = {2, 1, 5, 4}
+
+#include <iostream>
+
+int main()
+{
+    std::cout << "Hello World" ;
+}
+
+
