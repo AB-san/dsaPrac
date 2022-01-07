@@ -8,10 +8,10 @@
 // Output : arr[] = {2, 1, 5, 4}
 
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout << "Hello World" ;
+    cout << "Hello World" ;
 }
 
 
