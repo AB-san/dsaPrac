@@ -6,7 +6,7 @@ public class MinimizeMaxDiffHeights {
         Arrays.sort(arr);
         int n =arr.length;
         int k =5;
-        int min = arr[0],max =arr[n-1];
+        int min = arr[0],max =arr[n-1]; // to handle cases when we add/subtract k in each term which leads to same result tht is arr[n-1]-arr[0]
         int result = max-min;
         for(int i = 1;i<n;i++){
             if(arr[i] - k >=0 && i<n){
