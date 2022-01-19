@@ -6,14 +6,13 @@ public class MinimizeMaxDiffHeights {
         Arrays.sort(arr);
         int n =arr.length;
         int k =5;
-        int min = 0,max =0;
-        int result = Integer.MAX_VALUE;
+        int min = arr[0],max =arr[n-1];
+        int result = max-min;
         for(int i = 1;i<n;i++){
-            max = Math.max(arr[i-1]+k,arr[n-1]-k);
-            min = Math.min(arr[0]+k,arr[i]-k);
-            int diff = max-min;
-            if(diff<result){
-                result = diff;
+            if(arr[i] - k >=0 && i<n){
+                max = Math.max(arr[i-1]+k,arr[n-1]-k);
+                min = Math.min(arr[0]+k,arr[i]-k);
+                result = Math.min(result,max-min);
             }
         }
         System.out.println(result);
